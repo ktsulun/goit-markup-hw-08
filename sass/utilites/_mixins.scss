@@ -1,0 +1,15 @@
+@mixin display($type: flex, $justify: center, $align: center) {
+  display: $type;
+  align-items: $align;
+  justify-content: $justify;
+}
+@mixin logofont($size) {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: $size;
+}
+@mixin generalfont($weight: 400, $size: 14px) {
+  font-family: Roboto, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+}

@@ -1,0 +1,46 @@
+.scope-of-business {
+  margin-top: 94px;
+
+  h2 {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+}
+
+.activities {
+  display: flex;
+
+  .item {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+  }
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+.title-white {
+  font-weight: $bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  background: rgba(47, 48, 58, 0.8);
+
+  .item > & {
+    @include display;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+  }
+}

@@ -1,0 +1,44 @@
+.our-clients {
+  margin-top: 94px;
+  text-align: center;
+
+  h2 {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    min-width: 696px;
+  }
+}
+
+.clients-list {
+  @include display($align: stretch);
+
+  .item:not(:nth-child(6n)) {
+    margin-right: 30px;
+  }
+
+  &-link {
+    @include display;
+    border: 1px solid $client-logo-color;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    transition: border $transition;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    border: 1px solid $focus-color;
+  }
+}
+
+.client-logo {
+  fill: $client-logo-color;
+  transition: fill $transition;
+
+  .clients-list-link:hover &,
+  .clients-list-link:focus & {
+    fill: $focus-color;
+  }
+}

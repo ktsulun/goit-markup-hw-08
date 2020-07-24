@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  padding-top: $body-padding;
+  margin: 0;
+  @include generalfont;
+}
+
+ul {
+  @extend%list;
+}
+
+a {
+  @extend%link;
+}
+
+h2,
+h3 {
+  display: block;
+  margin: 0;
+  @include generalfont($weight: 700);
+  color: $title-nav-color;
+}
+
+p {
+  color: $primary-text-color;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: $primary-white-color;
+  width: 100%;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+}

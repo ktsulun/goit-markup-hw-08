@@ -1,0 +1,129 @@
+.footer {
+  margin-top: 94px;
+  width: 100%;
+  background: $footer-backgroung;
+
+  .container {
+    padding-top: 45px;
+    padding-bottom: 21px;
+  }
+
+  &-flex {
+    @include display($justify: flex-start, $align: stretch);
+  }
+  &-email {
+    width: 380px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: inherit;
+    color: $primary-white-color;
+    padding: 15px 16px;
+  }
+  &-logo {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.18;
+    color: $primary-white-color;
+  }
+}
+
+.contacts {
+  margin-right: 64px;
+  padding-right: 15px;
+}
+
+.adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2.36;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background: none;
+
+  span {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primary-white-color;
+  }
+}
+
+.social-media-list {
+  @include display($justify: flex-start);
+
+  li + li {
+    margin-left: 10px;
+  }
+
+  .item {
+    @include display;
+    margin-top: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color $transition;
+
+    &:hover,
+    &:focus {
+      background-color: $focus-color;
+    }
+
+    &:hover .social-links-icon,
+    &:focus .social-links-icon {
+      fill: $primary-white-color;
+    }
+  }
+}
+.social-links-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill $transition;
+}
+
+.social-media-links .title-white,
+.subscribe .title-white {
+  margin-bottom: 20px;
+}
+
+.subscribe {
+  margin-left: auto;
+
+  &-form {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+
+.submitt {
+  @include display;
+  width: 200px;
+  height: 50px;
+  background-color: $focus-color;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: $primary-white-color;
+  letter-spacing: 0.06em;
+
+  &-icon {
+    margin-left: 10px;
+    height: 24px;
+    width: 24px;
+  }
+}
+.title-white {
+  font-weight: $bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  background: rgba(47, 48, 58, 0.8);
+}
