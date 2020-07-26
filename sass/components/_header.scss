@@ -1,21 +1,19 @@
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+header {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
+  border-bottom: 1px solid #ececec;
 }
 
-.navigation {
-  @include display($justify: flex-start);
+@media screen and (min-width: 480px) and(max-width:767px) {
+  header {
+    width: 480px;
+  }
 }
 
-.main-navigation {
-  display: flex;
-  margin-left: 85px;
-
-  .item:not(:last-child) {
-    margin-right: 50px;
+@media screen and (min-width: 768px) and(max-width:1600px) {
+  header {
+    width: 480px;
   }
 }
 
@@ -30,21 +28,79 @@
   }
 }
 
+.navigation {
+  @include display($justify: space-between);
+  position: relative;
+  width: 100%;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.menu-button {
+  background-color: transparent;
+  border: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button-icon {
+  width: 40px;
+  height: 40px;
+  fill: $title-nav-color;
+  transition: fill $transition;
+
+  &:hover,
+  &:focus {
+    fill: $focus-color;
+  }
+}
+
+.header-menu-container {
+  position: absolute;
+  width: 100%;
+  top: 61px;
+  left: -15px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $primary-white-color;
+}
+
+screen and (min-width: 768px) {
+}
+
+.envelope {
+  width: 18px;
+  height: 11px;
+}
+
+.smartphone {
+  width: 10px;
+  height: 15px;
+}
+
 .navigation-item {
   position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   @include generalfont($weight: 500);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $title-nav-color;
   transition: color $transition;
+  margin-bottom: 40px;
 
   &::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -57,23 +113,24 @@
   &:focus {
     color: $focus-color;
   }
-}
 
-.navigation-item.current.navigation-item::after {
-  opacity: 1;
-}
-
-.contact-links {
-  @include display($justify: flex-start);
-  margin-left: auto;
-
-  .item + .item {
-    margin-left: 30px;
+  &.current {
+    color: $focus-color;
   }
+  &.current.navigation-item::after {
+    opacity: 1;
+  }
+}
+
+.contact-links,
+.main-navigation {
+  @include display;
+  flex-direction: column;
 }
 
 .contact-link-item {
   @include display($justify: flex-start);
+  margin-top: 16px;
   @include generalfont($weight: 500);
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -91,12 +148,28 @@
   fill: currentColor;
 }
 
-.envelope {
-  width: 18px;
-  height: 11px;
-}
+// .main-navigation {
+//   // display: flex;
+//   // margin-left: 85px;
 
-.smartphone {
-  width: 10px;
-  height: 15px;
-}
+//   .item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
+
+// .contact-links {
+//   @include display($justify: flex-start);
+//   margin-left: auto;
+
+//   .item + .item {
+//     margin-left: 30px;
+//   }
+// }
+
+// header {
+//   position: fixed;
+//   top: 0;
+//   z-index: 2;
+//   background-color: $primary-white-color;
+//   width: 100%;
+// }

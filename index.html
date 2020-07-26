@@ -19,46 +19,57 @@
   <body>
     <!--Page header with navigation-->
     <header>
-      <div class="container navigation">
+      <div class="navigation">
         <!--Company logo as a link to main page-->
         <a class="logo" lang="en" href="./index.html">
           <span class="logo-part1"> Web</span> Studio
         </a>
 
+        <button type="button" class="menu-button" data-menu-open>
+          <svg class="menu-button-icon" aria-label="кнопка меню навигации">
+            <use href="./images/symbol.svg#icon-menu"></use>
+            <use href="./images/symbol.svg#icon-close"></use>
+          </svg>
+        </button>
+
         <!--Navigation to other pages of web-site-->
-        <nav>
-          <ul class="main-navigation">
+        <div class="header-menu-container is-hidden" menu-modal>
+          <nav>
+            <ul class="main-navigation">
+              <li class="item">
+                <a class="navigation-item current" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="item">
+                <a class="navigation-item" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="item">
+                <a class="navigation-item" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!--Mailto and callto links of the header-->
+          <ul class="contact-links">
             <li class="item">
-              <a class="navigation-item current" href="./index.html">Студия</a>
+              <a class="contact-link-item" href="mailto:info@devstudio.com">
+                <svg class="contact-link-icon envelope">
+                  <use href="./images/symbol.svg#envelope"></use>
+                </svg>
+                <span>info@devstudio.com</span>
+              </a>
             </li>
             <li class="item">
-              <a class="navigation-item" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="item">
-              <a class="navigation-item" href="#">Контакты</a>
+              <a class="contact-link-item" href="tel:+380961111111">
+                <svg class="contact-link-icon smartphone">
+                  <use href="./images/symbol.svg#smartphone"></use>
+                </svg>
+                <span>+38 096 111 11 11</span>
+              </a>
             </li>
           </ul>
-        </nav>
-
-        <!--Mailto and callto links of the header-->
-        <ul class="contact-links">
-          <li class="item">
-            <a class="contact-link-item" href="mailto:info@devstudio.com">
-              <svg class="contact-link-icon envelope">
-                <use href="./images/symbol.svg#envelope"></use>
-              </svg>
-              <span>info@devstudio.com</span>
-            </a>
-          </li>
-          <li class="item">
-            <a class="contact-link-item" href="tel:+380961111111">
-              <svg class="contact-link-icon smartphone">
-                <use href="./images/symbol.svg#smartphone"></use>
-              </svg>
-              <span>+38 096 111 11 11</span>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -631,5 +642,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobilemenu.js"></script>
   </body>
 </html>

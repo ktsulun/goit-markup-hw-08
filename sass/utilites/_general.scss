@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  padding-top: $body-padding;
   margin: 0;
   @include generalfont;
 }
@@ -37,14 +36,6 @@ h3 {
 p {
   color: $primary-text-color;
   margin: 0;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  background-color: $primary-white-color;
-  width: 100%;
 }
 
 .hidden {

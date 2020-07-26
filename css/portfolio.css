@@ -27,7 +27,6 @@ html {
 }
 
 body {
-  padding-top: 80px;
   margin: 0;
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -47,14 +46,6 @@ h3 {
 p {
   color: #757575;
   margin: 0;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  background-color: #ffffff;
-  width: 100%;
 }
 
 .hidden {
