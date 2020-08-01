@@ -25,15 +25,21 @@
           <span class="logo-part1"> Web</span> Studio
         </a>
 
-        <button type="button" class="menu-button" data-menu-open>
+        <button type="button" class="menu-button" data-menu-button>
           <svg class="menu-button-icon" aria-label="кнопка меню навигации">
-            <use href="./images/symbol.svg#icon-menu"></use>
-            <use href="./images/symbol.svg#icon-close"></use>
+            <use
+              class="menu-open-icon"
+              href="./images/symbol.svg#icon-menu"
+            ></use>
+            <use
+              class="menu-close-icon"
+              href="./images/symbol.svg#icon-close"
+            ></use>
           </svg>
         </button>
 
         <!--Navigation to other pages of web-site-->
-        <div class="header-menu-container is-hidden" menu-modal>
+        <div class="header-menu-container is-hidden" data-menu>
           <nav>
             <ul class="main-navigation">
               <li class="item">
@@ -643,5 +649,6 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobilemenu.js"></script>
+    <script src="./js/button.js"></script>
   </body>
 </html>

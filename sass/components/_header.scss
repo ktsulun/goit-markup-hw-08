@@ -1,7 +1,5 @@
 header {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
   border-bottom: 1px solid #ececec;
 }
 
@@ -29,7 +27,7 @@ header {
 }
 
 .navigation {
-  @include display($justify: space-between);
+  @include display($justify: space-around);
   position: relative;
   width: 100%;
   height: 60px;
@@ -43,6 +41,14 @@ header {
 .menu-button {
   background-color: transparent;
   border: 0;
+
+  & ~ .menu-close-icon {
+    display: none;
+  }
+}
+
+.menu-button.is-open .menu-open-icon {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
