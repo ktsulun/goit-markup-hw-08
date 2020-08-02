@@ -15,6 +15,10 @@ html {
 body {
   margin: 0;
   @include generalfont;
+
+  @media screen and (min-width: 1600px) {
+    padding-top: 80px;
+  }
 }
 
 ul {
@@ -54,4 +58,11 @@ p {
   opacity: 0;
   overflow: hidden;
   pointer-events: none;
+}
+.is-visible {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  overflow: scroll;
+  pointer-events: visible;
 }

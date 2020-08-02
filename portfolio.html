@@ -13,51 +13,59 @@
 
   <body>
     <!--Page header with navigation-->
-    <header>
-      <div class="container navigation">
-        <!--Company logo as a link to main page-->
-        <a class="logo" lang="en" href="./index.html">
-          <span class="logo-part1"> Web</span> Studio
-        </a>
-
-        <!--Navigation to other pages of web-site-->
-        <nav>
-          <ul class="main-navigation">
-            <li class="item">
-              <a class="navigation-item" href="./index.html">Студия</a>
-            </li>
-            <li class="item">
-              <a class="navigation-item current" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="item">
-              <a class="navigation-item" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-
-        <!--Mailto and callto links of the header-->
-        <ul class="contact-links">
-          <li class="item">
-            <a class="contact-link-item" href="mailto:info@devstudio.com">
-              <svg class="contact-link-icon envelope">
-                <use href="./images/symbol.svg#envelope"></use>
-              </svg>
-              <span>info@devstudio.com</span>
-            </a>
-          </li>
-          <li class="item">
-            <a class="contact-link-item" href="tel:+380961111111">
-              <svg class="contact-link-icon smartphone">
-                <use href="./images/symbol.svg#smartphone"></use>
-              </svg>
-              <span>+38 096 111 11 11</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
- 
-    <main>
+      <header>
+        <div class="navigation">
+          <!--Company logo as a link to main page-->
+          <a class="logo" lang="en" href="./index.html">
+            <span class="logo-part1"> Web</span> Studio
+          </a>
+      
+          <button type="button" class="menu-button" data-menu-button>
+            <svg class="menu-button-icon" aria-label="кнопка меню навигации">
+              <use class="menu-open-icon" href="./images/symbol.svg#icon-menu"></use>
+              <use class="menu-close-icon" href="./images/symbol.svg#icon-close"></use>
+            </svg>
+          </button>
+      
+          <!--Navigation to other pages of web-site-->
+          <div class="header-menu-container" data-menu>
+            <nav>
+              <ul class="main-navigation">
+                <li class="item">
+                  <a class="navigation-item" href="./index.html">Студия</a>
+                </li>
+                <li class="item">
+                  <a class="navigation-item current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="item">
+                  <a class="navigation-item" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+      
+            <!--Mailto and callto links of the header-->
+            <ul class="contact-links">
+              <li class="item">
+                <a class="contact-link-item" href="mailto:info@devstudio.com">
+                  <svg class="contact-link-icon envelope">
+                    <use href="./images/symbol.svg#envelope"></use>
+                  </svg>
+                  <span>info@devstudio.com</span>
+                </a>
+              </li>
+              <li class="item">
+                <a class="contact-link-item" href="tel:+380961111111">
+                  <svg class="contact-link-icon smartphone">
+                    <use href="./images/symbol.svg#smartphone"></use>
+                  </svg>
+                  <span>+38 096 111 11 11</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+     <main>
       <!--Portfolio section-->
       <section>
         <div class="container">
@@ -331,5 +339,8 @@
         </div>
       </div>
     </footer>
+        <script src="./js/modal.js"></script>
+        <script src="./js/mobilemenu.js"></script>
+        <script src="./js/button.js"></script>
   </body>
 </html>
