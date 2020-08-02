@@ -1,9 +1,36 @@
-.filter-list {
-  @include display;
-  margin-top: 93px;
+.portfolio-container {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 15px;
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1600px) {
+    padding: 94px 15px;
+    width: 1200px;
+  }
+}
 
-  li + li {
-    margin-left: 8px;
+.filter-list {
+  @include display($justify: flex-start, $align: flex-start);
+  flex-wrap: wrap;
+
+  li {
+    margin-bottom: 15px;
+    &:not(:nth-child(3n)) {
+      margin-right: 8px;
+    }
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    @include display;
+    flex-wrap: nowrap;
   }
 }
 
