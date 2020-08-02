@@ -1,20 +1,31 @@
-.our-clients {
-  margin-top: 94px;
+.clients-container {
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 
   h2 {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
-    min-width: 696px;
+    margin-bottom: 30px;
   }
 }
 
 .clients-list {
-  @include display($align: stretch);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-  .item:not(:nth-child(6n)) {
+  .item {
+    margin-bottom: 30px;
+  }
+
+  .item:not(:nth-child(2n)) {
     margin-right: 30px;
   }
 
