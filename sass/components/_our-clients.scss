@@ -4,7 +4,7 @@
   padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 480px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 
@@ -51,5 +51,35 @@
   .clients-list-link:hover &,
   .clients-list-link:focus & {
     fill: $focus-color;
+  }
+}
+@media screen and (min-width: 768px) and(max-width:1599px) {
+  .clients-container {
+    min-width: 768px;
+  }
+  .clients-list {
+    .item {
+      margin-right: 30px;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1600px) {
+  .clients-container {
+    justify-content: start;
+    flex-wrap: nowrap;
+    min-width: 1200px;
+    padding: 94px 15px;
+    h2 {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+  }
+  .clients-list {
+    .item:not(:nth-child(6n)) {
+      margin-right: 30px;
+    }
   }
 }

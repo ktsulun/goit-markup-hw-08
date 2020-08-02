@@ -426,7 +426,7 @@ header {
 
 .clients-list {
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 
 .clients-list .item:not(:nth-child(6n)) {

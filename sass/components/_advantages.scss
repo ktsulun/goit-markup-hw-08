@@ -47,15 +47,14 @@
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
-  }
+    .item {
+      width: calc((100% - 30px * 2) / 2);
+      margin: 0;
+    }
 
-  .advantages-list .item {
-    width: calc((100% - 30px * 2) / 2);
-    margin: 0;
-  }
-
-  .advantages-list .item:not(:nth-child(2n)) {
-    margin-right: 30px;
+    .item:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
   }
 }
 

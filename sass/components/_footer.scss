@@ -1,19 +1,20 @@
 .footer {
-  margin-top: 94px;
-  width: 100%;
-  background: $footer-backgroung;
-
-  .container {
-    padding-top: 45px;
-    padding-bottom: 21px;
-  }
+  min-width: 480px;
+  background: $footer-background;
 
   &-flex {
-    @include display($justify: flex-start, $align: stretch);
+    @include display;
+    flex-direction: column;
+    width: 480px;
+    padding: 60px 15px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
   &-email {
-    width: 380px;
-    margin-right: 12px;
+    display: block;
+    width: 450px;
+    max-width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -22,19 +23,17 @@
     padding: 15px 16px;
   }
   &-logo {
-    margin-bottom: 20px;
-    font-size: 22px;
+    @include display;
+    margin: 0;
+    font-size: 24px;
     line-height: 1.18;
     color: $primary-white-color;
   }
 }
 
-.contacts {
-  margin-right: 64px;
-  padding-right: 15px;
-}
-
 .adress {
+  margin-top: 20px;
+  text-align: center;
   font-style: normal;
   font-size: 14px;
   line-height: 2.36;
@@ -50,8 +49,13 @@
   }
 }
 
+.social-media-links {
+  margin-top: 60px;
+  text-align: center;
+}
+
 .social-media-list {
-  @include display($justify: flex-start);
+  @include display;
 
   li + li {
     margin-left: 10px;
@@ -84,22 +88,26 @@
   transition: fill $transition;
 }
 
-.social-media-links .title-white,
+.title-white,
 .subscribe .title-white {
   margin-bottom: 20px;
 }
 
 .subscribe {
-  margin-left: auto;
+  margin-top: 60px;
+  text-align: center;
 
   &-form {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: 20px;
   }
 }
 
 .submitt {
   @include display;
+  margin-top: 20px;
   width: 200px;
   height: 50px;
   background-color: $focus-color;
@@ -126,4 +134,85 @@
   text-transform: uppercase;
   color: $primary-white-color;
   background: rgba(47, 48, 58, 0.8);
+}
+
+@media screen and (min-width: 768px) and(max-width:1599px) {
+  .footer-flex {
+    min-width: 768px;
+  }
+  .tablet {
+    @include display($align: start, $justify: space-around);
+    width: 100%;
+  }
+  .social-media-links {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .footer-flex {
+    min-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 45px;
+    padding-bottom: 21px;
+  }
+  .tablet {
+    @include display($align: start);
+  }
+
+  .social-media-links {
+    padding-top: 12px;
+    display: block;
+    text-align: initial;
+    margin: 0;
+  }
+
+  .contacts {
+    margin-right: 69px;
+  }
+
+  .footer-logo {
+    display: block;
+    font-size: 26px;
+  }
+
+  .adress {
+    text-align: initial;
+  }
+
+  .social-media-links .title-white,
+  .subscribe .title-white {
+    margin-bottom: 20px;
+  }
+
+  .subscribe {
+    text-align: initial;
+    padding-top: 12px;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .footer-email {
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  .submitt {
+    margin-top: 0;
+  }
+
+  .submitt-icon {
+    margin-left: 10px;
+    height: 24px;
+    width: 24px;
+  }
 }
