@@ -72,6 +72,14 @@
 
 .project-text {
   padding: 20px 24px;
+
+  h2 {
+    @media screen and (min-width: 768px) and (max-width: 1599px) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
 }
 
 .project-type {

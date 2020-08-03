@@ -570,6 +570,14 @@ header {
   padding: 20px 24px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .project-text h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .project-type {
   font-size: 16px;
   line-height: 1.87;
