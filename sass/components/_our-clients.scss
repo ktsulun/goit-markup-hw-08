@@ -53,7 +53,7 @@
     fill: $focus-color;
   }
 }
-@media screen and (min-width: 768px) and(max-width:1599px) {
+@media screen and (min-width: 768px) and(max-width:1199px) {
   .clients-container {
     min-width: 768px;
   }
@@ -66,7 +66,7 @@
     }
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients-container {
     justify-content: start;
     flex-wrap: nowrap;

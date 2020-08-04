@@ -33,7 +33,7 @@ body {
   font-size: 14px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   body {
     padding-top: 80px;
   }
@@ -336,7 +336,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .contact-link-item {
     margin-top: 0;
     font-size: 12px;
@@ -346,7 +346,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   header {
     position: fixed;
     top: 0;
@@ -445,7 +445,7 @@ header {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .order-service {
     max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/body/pictures/hero-768.jpg);
@@ -453,31 +453,31 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 2dppx), screen and (min-width: 768px) and (max-width: 1599px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx), screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi) {
   .order-service {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/body/pictures/hero-1536.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/body/pictures/hero-1536.jpg);
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .order-service {
     height: 600px;
-    max-width: 1600px;
+    max-width: 1200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/body/pictures/hero-1600.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/body/pictures/hero-1600.jpg);
     background-size: cover;
   }
 }
 
-@media screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 2dppx), screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi) {
   .order-service {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/body/pictures/hero-3200.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/body/pictures/hero-3200.jpg);
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .order-service h1 {
     font-family: Roboto, sans-serif;
     font-weight: 900;
@@ -537,7 +537,7 @@ header {
   height: 70px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages {
     max-width: 768px;
   }
@@ -557,7 +557,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .advantages {
     margin-top: 64px;
     max-width: 1200px;
@@ -568,7 +568,7 @@ header {
     display: flex;
   }
   .advantages-list .item {
-    width: calc((100%-90px) / 4);
+    width: calc((100% - 90px) / 4);
     margin: 0;
   }
   .advantages-list .item:not(:last-child) {
@@ -771,7 +771,7 @@ header {
   background: rgba(47, 48, 58, 0.8);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-flex {
     min-width: 768px;
   }
@@ -791,7 +791,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer-flex {
     min-width: 1200px;
     display: -webkit-box;
@@ -941,7 +941,7 @@ header {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-container {
     min-width: 768px;
   }
@@ -953,7 +953,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients-container {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1092,7 +1092,7 @@ header {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-container {
     max-width: 768px;
   }
@@ -1126,7 +1126,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team-container {
     max-width: 1200px;
   }
@@ -1145,7 +1145,7 @@ header {
             align-items: center;
   }
   .team-member {
-    width: calc((100%-90px) / 4);
+    width: calc((100% - 90px) / 4);
     padding-bottom: 35px;
     margin-right: 30px;
     background-color: #ffffff;
@@ -1162,7 +1162,7 @@ header {
   display: none;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
     padding-left: 15px;
@@ -1514,7 +1514,7 @@ header {
   background-color: #2196f3;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal-window {
     min-width: 528px;
     height: 581px;

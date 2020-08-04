@@ -16,7 +16,7 @@ body {
   margin: 0;
   @include generalfont;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 80px;
   }
 }
