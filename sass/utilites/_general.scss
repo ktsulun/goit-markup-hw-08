@@ -14,6 +14,8 @@ html {
 
 body {
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   @include generalfont;
 
   @media screen and (min-width: 1200px) {

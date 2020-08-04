@@ -19,15 +19,16 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 
   .item {
     margin-bottom: 30px;
   }
 
-  .item:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
+  // .item:not(:nth-child(2n)) {
+  //   margin-right: 30px;
+  // }
 
   &-link {
     @include display;

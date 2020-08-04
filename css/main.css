@@ -28,6 +28,8 @@ html {
 
 body {
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -415,6 +417,7 @@ header {
 
 .order-service-container {
   display: block;
+  padding: 0 15px;
 }
 
 .order-service-link {
@@ -494,7 +497,7 @@ header {
 }
 
 .advantages {
-  margin: 60px 0;
+  margin: 60px;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -596,7 +599,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 480px;
-  padding: 60px 15px;
+  padding: 60px 0;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -604,7 +607,8 @@ header {
 
 .footer-email {
   display: block;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   max-width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
@@ -717,6 +721,7 @@ header {
 }
 
 .subscribe-form {
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,6 +733,12 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscribe-form {
+    width: 450px;
+  }
 }
 
 .submitt {
@@ -895,17 +906,15 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .clients-list .item {
   margin-bottom: 30px;
-}
-
-.clients-list .item:not(:nth-child(2n)) {
-  margin-right: 30px;
 }
 
 .clients-list-link {
