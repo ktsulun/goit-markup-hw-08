@@ -628,7 +628,6 @@ header {
 }
 
 .footer {
-  min-width: 480px;
   background: #2f303a;
 }
 
@@ -646,7 +645,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 480px;
   padding: 60px 0;
   max-width: 480px;
   margin-left: auto;

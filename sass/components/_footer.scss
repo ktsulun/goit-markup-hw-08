@@ -1,11 +1,9 @@
 .footer {
-  min-width: 480px;
   background: $footer-background;
 
   &-flex {
     @include display;
     flex-direction: column;
-    width: 480px;
     padding: 60px 0;
     max-width: 480px;
     margin-left: auto;
