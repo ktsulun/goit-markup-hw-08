@@ -5,14 +5,13 @@
     @include display;
     flex-direction: column;
     padding: 60px 0;
-    max-width: 480px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
   &-email {
     display: block;
     max-width: 450px;
-    width: 100%;
     max-width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);

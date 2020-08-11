@@ -106,6 +106,10 @@
   border-radius: 4px;
   transition: border $transition;
 
+  @media screen and (max-width: 479px) {
+    max-width: 100%;
+  }
+
   .input-group:hover &,
   .input-group:focus & {
     border: 1px solid $focus-color;
@@ -144,6 +148,10 @@
   resize: none;
   padding: 12px 16px;
   transition: border $transition;
+
+  @media screen and (max-width: 479px) {
+    max-width: 100%;
+  }
 
   &-container {
     position: relative;
